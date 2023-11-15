@@ -156,7 +156,6 @@ public class Admin extends javax.swing.JFrame {
             //melakukan pencarian data berdasarkan primary key pada tabel
             res = stat.executeQuery("select * from perpus where " + "no_buku='" + id.getText() + "'"
             );
-
             while (res.next()) {
                 nama.setText(res.getString("judul_buku"));
                 username.setText(res.getString("pengarang"));
